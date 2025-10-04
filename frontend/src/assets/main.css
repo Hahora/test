@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+/* Dark mode configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Technical grid pattern */
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(currentColor 1px, transparent 1px),
+    linear-gradient(90deg, currentColor 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Technical blueprint styling */
+.technical-border {
+  position: relative;
+}
+
+.technical-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid currentColor;
+  border-radius: inherit;
+  opacity: 0.1;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Light mode scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Backdrop blur support */
+@supports (backdrop-filter: blur(10px)) {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+}
+
+/* Technical animation for loading states */
+@keyframes technical-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.technical-pulse {
+  animation: technical-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Focus states for accessibility */
+.focus\:ring-technical:focus {
+  --tw-ring-color: #3b82f6;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)
+    var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width))
+    var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+/* Technical typography */
+.font-technical {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+/* Glass morphism effect */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-morphism {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
