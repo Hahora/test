@@ -2,7 +2,7 @@
 
 _Интеллектуальная платформа для анализа PDF-документов на соответствие стандартам (ГОСТ, критерии 1.1.x). Разработана для хакатона AtomicHack 3 в НГТУ._
 
-[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green?logo=fastapi)](https://fastapi.tiangolo.com/) [![Vue.js](https://img.shields.io/badge/Vue.js-3-green?logo=vuedotjs)](https://vuejs.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Status: Prototype](https://img.shields.io/badge/Status-Prototype-orange)](https://github.com/your-repo)
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green?logo=fastapi)](https://fastapi.tiangolo.com/) [![Vue.js](https://img.shields.io/badge/Vue.js-3-green?logo=vuedotjs)](https://vuejs.org/)
 
 # **Цифровой помощник конструктора** — это веб-приложение для автоматизированной проверки технических чертежей и документов в формате PDF. Оно анализирует файлы на наличие нарушений по критериям (например, шифр документа, тип, размеры, надписи), генерирует отчеты с аннотациями и предоставляет удобный интерфейс для управления историей проверок.
 
